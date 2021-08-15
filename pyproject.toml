@@ -11,6 +11,8 @@ uvicorn = "^0.15.0"
 httpx = "^0.18.2"
 Jinja2 = "^3.0.1"
 aiofiles = "^0.7.0"
+pydantic = "^1.8.2"
+requests = "^2.26.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
