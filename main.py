@@ -4,6 +4,7 @@ from pathlib import Path
 import fastapi
 import uvicorn
 
+from loguru import logger
 from starlette.staticfiles import StaticFiles
 
 from views import home
@@ -16,7 +17,7 @@ app = fastapi.FastAPI()
 def configure_api_keys():
     file = Path("settings.json").absolute()
     if not file.exists():
-        print(
+        logger.warning(
             f"WARNING: {file} file not found, you cannot continue, please see settings_template.json"
         )
         raise Exception(

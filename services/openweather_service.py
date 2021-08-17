@@ -1,6 +1,7 @@
 from typing import Optional
 
 import httpx
+from loguru import logger
 
 api_key: Optional[str] = None
 
@@ -8,6 +9,9 @@ api_key: Optional[str] = None
 async def get_report(
     city: str, state: Optional[str], country: Optional[str], units: Optional[str]
 ) -> dict:
+
+    logger.debug("Add caching here...")
+
     if state:
         q = f"{city},{state},{country}"
     else:
