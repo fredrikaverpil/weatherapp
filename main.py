@@ -1,17 +1,20 @@
 import json
 from pathlib import Path
 
+from loguru import logger
+from starlette.staticfiles import StaticFiles
 import fastapi
 import uvicorn
 
-from loguru import logger
-from starlette.staticfiles import StaticFiles
-
-from views import home
 from api import weather_api
+from custom_logging.logger import init_logging
 from services import openweather_service
+from views import home
+
 
 app = fastapi.FastAPI()
+
+init_logging()
 
 
 def configure_api_keys():
