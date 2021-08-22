@@ -44,4 +44,4 @@ In vscode, create a `.vscode/launch.json` file for Python/FastAPI via its wizard
 }
 ```
 
-Run via vscode's debugger, set breakpoints and interact with the app.
+Run app via vscode's debugger, set breakpoints, interact with the app and inspect via vscode's debugger.
