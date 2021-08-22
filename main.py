@@ -15,7 +15,6 @@ from views import home
 class APIKeyError(Exception):
     def __init__(self, message: str):
         logger.error(message)
-        super().__init__(message)
 
 
 app = fastapi.FastAPI()
