@@ -1,4 +1,3 @@
 {
-    "api_key": "YOUR_API_KEY_FROM_openweather.org",
-    "action": "copy this to settings.json with real values"
+    "api_key": "YOUR_API_KEY_FROM_openweather.org"
 }
