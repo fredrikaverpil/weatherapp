@@ -24,7 +24,7 @@ $ uvicorn main:app
 
 ### Debug
 
-In vscode, add a `.vscode/launch.json` file for Python/FastAPI:
+In vscode, create a `.vscode/launch.json` file for Python/FastAPI via its wizard, e.g:
 
 ```json
 {
