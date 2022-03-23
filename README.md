@@ -14,7 +14,7 @@ $ poetry install
 
 ### Configure
 
-Add your API key from openweather.org into a `settings.json` file in the root of this repo.
+Add your API key from https://openweathermap.org into a `settings.json` file in the root of this repo.
 
 ### Run
 
